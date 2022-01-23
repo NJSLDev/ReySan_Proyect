@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.carousel2_content {
+    & > div {
+        .carousel-indicators [data-bs-target] {
+            background-color: $hover_color;
+        }
+
+        .carousel-inner {
+
+            .carousel-item {
+                img {
+                    height: 400px;
+                }
+                 & > div {
+
+                    h5 {
+                        font-family: $font-family-tittle;
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: $primary_color_text;
+
+                        &:hover {
+                            color: $hover_color;
+                        }
+                    }
+
+                    p {
+                        font-family: $font-family-tittle;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: $primary_color_text;
+                    }
+                 }
+
+            }
+        }
+    }
+}

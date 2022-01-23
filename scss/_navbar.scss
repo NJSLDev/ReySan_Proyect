@@ -1,0 +1,156 @@
+@use 'global' as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    @extend %text-navbar;
+    width: 100%;
+    height: 100px;
+
+    .header_bar_fix {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secundary_color_bg;
+        height: 30px;
+        width: 100%;
+
+        a {
+            color: $secundary_color_text;
+            &:hover{
+                color: $hover_color;
+                transition: color 1.5s;
+            }
+        }
+
+        .fix_promotions {
+            display: flex;
+            flex: 3 1 auto;
+            align-items: center;
+            justify-content: start;
+
+            a {
+                height: 28px;
+            }
+
+        }
+
+        .fix_login {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex: 0 0 auto;
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+
+            li {
+                padding: 0 10px;
+                display: flex;
+                flex-direction: column;
+
+                div,
+                div::after,
+                div::before {
+                    content: '';
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: auto;
+                }
+
+                div::after,
+                div::before {
+                    height: 1px;
+                }
+
+                div:hover::after {
+                    background-color: $hover_color;
+                }
+            }
+        }
+    }
+
+    .header_bar_responsive {
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid $secundary_color_bg;
+
+        & > div {
+            display: flex;
+            height: 100%;
+
+            .btn_menu {
+                height: 100%;
+                width: auto;
+                border-right: 1px solid $secundary_color_bg;
+
+                .button_content {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $primary_color_bg;
+                    justify-items: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 100%;
+                    padding: 10px 5px;
+                    transition: background-color 1.5s;
+
+                    &:hover {
+                        background-color: $hover_color;
+                    }
+
+                    .icon {
+                        height: 49px;
+                        flex: 1 1 70%;
+                    }
+
+                    .text {
+                        height: 19px;
+                        flex: 0 0 auto;
+                        align-self: center;
+                        font-size: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .navbar {
+                margin: 0;
+                width: 100%;
+                padding: 0;
+                border-right: 1px solid $secundary_color_bg;
+                flex-wrap: nowrap;
+                background-color: $primary_color_bg;
+
+                img {
+                    height: 40px;
+                    border-radius: 50%;
+                }
+
+                .nav_items {
+                    padding: 0 10px;
+                    transition: background-color 1.5s;
+                    &:hover {
+                            // border-bottom: 2px solid $hover_color;
+                            background-color: $hover_color;
+                            border-radius: 50%;
+                        }
+                    .nav_link {
+                        color: $primary_color_text;
+                        text-decoration: none;
+                        
+
+                    }
+                }
+            }
+        }
+    }
+
+}

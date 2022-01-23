@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReySan - Proyect web Developer</title>
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- LINK BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- LINK CSS CUSTOM -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- INICIO - HEADER - BARRA DE NAVEGACION -->
+    <header class="header">
+        <div class="header_bar_fix">
+            <div class="fix_promotions">
+                <ul class="promotions">
+                    <li>
+                        <div>
+                            <a href="">
+                                <span> 🌼 Modelos en Tendencia</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">
+                                <span>🧘 Estilistas en Tendencia</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fix_login">
+                <ul class="login_menu">
+                    <li class="login_link">
+                        <div>
+                            <a href="">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span>Entrar</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="login_link">
+                        <div>
+                            <a href="">
+                                <i class="fas fa-registered"></i>
+                                <span>Registrar</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bar_responsive">
+            <div class="bar_responsive_content">
+                <div class="btn_menu">
+                    <div class="button_content">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <span class="text">Menu</span>
+                    </div>
+                </div>
+                <div class="btn_menu">
+                    <div class="button_content">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <span class="text">Search</span>
+                    </div>
+                </div>
+                <ul class="navbar">
+                    <li class="nav_items">
+                        <a class="nav_link" aria-current="page" href="#promo">Promociones</a>
+                    </li>
+                    <li class="nav_items">
+                        <a class="nav_link" aria-current="page" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav_items">
+                        <a class="nav_link" aria-current="page" href="#direccion">Direccion</a>
+                    </li>
+                    <li class="nav_items">
+                        <strong class="logo">
+                            <img src="./assets/image/reysan2.png" alt="reysan">
+                        </strong>
+                    </li>
+                    <li class="nav_items">
+                        <a class="nav_link" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav_items">
+                        <a class="nav_link" aria-current="page" href="#patrocinantes">Patrocinantes</a>
+                    </li>
+                    <li class="nav_items">
+                        <a class="nav_link" aria-current="page" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div class="btn_menu">
+                    <div class="button_content">
+                        <span class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </span>
+                        <span class="text">Login</span>
+                    </div>
+                </div>
+                <div class="btn_menu">
+                    <div class="button_content">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <span class="text">cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FIN - HEADER - BARRA DE NAVEGACION -->
+
+    <!-- INICIO - MAIN -->
+    <main class="main">
+
+        <!-- INICIO - CAROUSEL -->
+        <div class="carousel_content">
+            <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/image/carousel_3.jpg" class="d-block w-100" alt="carousel_1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Desde diseños simples hasta los mas actuales</h5>
+                      <p>Diseños para todas las ocaciones, edades y gustos.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/image/carousel_2.jpg" class="d-block w-100" alt="carousel_2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Los colores mas exoticos</h5>
+                      <p>Revisa nuestro catalogo y observa la gran variedad de colores disponibles.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/image/carousel_4.jpg" class="d-block w-100" alt="carousel_3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Gran variedad en Acrilicos</h5>
+                      <p>Todos los tamaños y para cualquier tipo de manos.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+              </div>
+        </div>
+        <!-- FIN - CAROUSEL -->
+
+        <!-- INICIO - SECTION CARDS -->
+        <section class="card_content d-flex m-5">
+            <article class="card_item">
+                <div class="card">
+                    <img src="assets/image/hidratacion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Hidratacion</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn_card">Entrar</a>
+                    </div>
+                  </div>
+            </article>
+            <article class="card_item">
+                <div class="card">
+                    <img src="assets/image/esmalte.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Esmalte</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn_card">Entrar</a>
+                    </div>
+                  </div>
+            </article>
+            <article class="card_item">
+                <div class="card">
+                    <img src="assets/image/maquillaje.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maquillaje</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn_card">Entrar</a>
+                    </div>
+                  </div>
+            </article>
+        </section>
+        <!-- FIN - SECTION CARDS -->
+
+    </main>
+    <!-- FIN - MAIN -->
+
+    <!-- INICIO - SECTION CAROUSEL 2 -->
+    <section class="carousel2_content mb-5">
+        <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/image/carousel_3.jpg" class="d-block w-100" alt="carousel_1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Desde diseños simples hasta los mas actuales</h5>
+                  <p>Diseños para todas las ocaciones, edades y gustos.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/image/carousel_2.jpg" class="d-block w-100" alt="carousel_2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Los colores mas exoticos</h5>
+                  <p>Revisa nuestro catalogo y observa la gran variedad de colores disponibles.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/carousel_4.jpg" class="d-block w-100" alt="carousel_3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Gran variedad en Acrilicos</h5>
+                  <p>Todos los tamaños y para cualquier tipo de manos.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+          </div>
+    </section>
+    <!-- FIN - SECTION CAROUSEL 2 -->
+
+
+
+
+
+
+
+
+
+    <!-- LINK FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c30fae2820.js" crossorigin="anonymous"></script>
+<!-- LINK BOOSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

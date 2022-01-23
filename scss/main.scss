@@ -1,0 +1,103 @@
+@use 'global' as *;
+@use 'navbar' as *;
+@use 'carousel' as *;
+
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    @extend %base-font;
+}
+
+.main {
+    margin-top: 100px;
+    .carousel_content {
+        & > div {
+            .carousel-indicators [data-bs-target] {
+                background-color: $hover_color;
+            }
+
+            .carousel-inner {
+
+                .carousel-item {
+                    img {
+                        height: 400px;
+                    }
+                     & > div {
+
+                        h5 {
+                            font-family: $font-family-tittle;
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: $primary_color_text;
+
+                            &:hover {
+                                color: $hover_color;
+                            }
+                        }
+
+                        p {
+                            font-family: $font-family-tittle;
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                            color: $primary_color_text;
+                        }
+                     }
+
+                }
+            }
+        }
+    }
+
+    .card_content {
+        gap: 2rem;
+        .card_item {
+            .card {
+                border: 1px solid $primary_color_text;
+                border-radius: .5rem;
+                img {
+                    height: 250px;
+                    width: 100%;
+                    border-top-right-radius: .5rem;
+                    border-top-left-radius: .5rem;
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h5 {
+                        @extend %base-font;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    p {
+                        @extend %base-font;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+
+                    .btn_card {
+                        color: $secundary_color_text;
+                        background-color: $secundary_color_bg;
+                        border-color: $primary_color_text;
+                        transition: background-color 1.5s;
+
+                        &:hover {
+                            color: $primary_color_text;
+                            background-color: #f110d3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

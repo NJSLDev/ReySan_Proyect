@@ -1,0 +1,252 @@
+body, .main .card_content .card_item .card .card-body h5, .main .card_content .card_item .card .card-body p {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.header {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  width: 30px;
+  height: 27px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+}
+.header .header_bar_fix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 30px;
+  width: 100%;
+}
+.header .header_bar_fix a {
+  color: #fff;
+}
+.header .header_bar_fix a:hover {
+  color: #f110d3;
+  transition: color 1.5s;
+}
+.header .header_bar_fix .fix_promotions {
+  display: flex;
+  flex: 3 1 auto;
+  align-items: center;
+  justify-content: start;
+}
+.header .header_bar_fix .fix_promotions a {
+  height: 28px;
+}
+.header .header_bar_fix .fix_login {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 0 0 auto;
+}
+.header .header_bar_fix ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.header .header_bar_fix ul li {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.header .header_bar_fix ul li div,
+.header .header_bar_fix ul li div::after,
+.header .header_bar_fix ul li div::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+}
+.header .header_bar_fix ul li div::after,
+.header .header_bar_fix ul li div::before {
+  height: 1px;
+}
+.header .header_bar_fix ul li div:hover::after {
+  background-color: #f110d3;
+}
+.header .header_bar_responsive {
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.header .header_bar_responsive > div {
+  display: flex;
+  height: 100%;
+}
+.header .header_bar_responsive > div .btn_menu {
+  height: 100%;
+  width: auto;
+  border-right: 1px solid #000;
+}
+.header .header_bar_responsive > div .btn_menu .button_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-items: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  padding: 10px 5px;
+  transition: background-color 1.5s;
+}
+.header .header_bar_responsive > div .btn_menu .button_content:hover {
+  background-color: #f110d3;
+}
+.header .header_bar_responsive > div .btn_menu .button_content .icon {
+  height: 49px;
+  flex: 1 1 70%;
+}
+.header .header_bar_responsive > div .btn_menu .button_content .text {
+  height: 19px;
+  flex: 0 0 auto;
+  align-self: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+.header .header_bar_responsive > div .navbar {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  border-right: 1px solid #000;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+.header .header_bar_responsive > div .navbar img {
+  height: 40px;
+  border-radius: 50%;
+}
+.header .header_bar_responsive > div .navbar .nav_items {
+  padding: 0 10px;
+  transition: background-color 1.5s;
+}
+.header .header_bar_responsive > div .navbar .nav_items:hover {
+  background-color: #f110d3;
+  border-radius: 50%;
+}
+.header .header_bar_responsive > div .navbar .nav_items .nav_link {
+  color: #000;
+  text-decoration: none;
+}
+
+.carousel2_content > div .carousel-indicators [data-bs-target] {
+  background-color: #f110d3;
+}
+.carousel2_content > div .carousel-inner .carousel-item img {
+  height: 400px;
+}
+.carousel2_content > div .carousel-inner .carousel-item > div h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.carousel2_content > div .carousel-inner .carousel-item > div h5:hover {
+  color: #f110d3;
+}
+.carousel2_content > div .carousel-inner .carousel-item > div p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 100px;
+}
+.main .carousel_content > div .carousel-indicators [data-bs-target] {
+  background-color: #f110d3;
+}
+.main .carousel_content > div .carousel-inner .carousel-item img {
+  height: 400px;
+}
+.main .carousel_content > div .carousel-inner .carousel-item > div h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.main .carousel_content > div .carousel-inner .carousel-item > div h5:hover {
+  color: #f110d3;
+}
+.main .carousel_content > div .carousel-inner .carousel-item > div p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.main .card_content {
+  gap: 2rem;
+}
+.main .card_content .card_item .card {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+.main .card_content .card_item .card img {
+  height: 250px;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.main .card_content .card_item .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .card_content .card_item .card .card-body h5 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.main .card_content .card_item .card .card-body p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.main .card_content .card_item .card .card-body .btn_card {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  transition: background-color 1.5s;
+}
+.main .card_content .card_item .card .card-body .btn_card:hover {
+  color: #000;
+  background-color: #f110d3;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+$primary_color_text: #000;
+$secundary_color_text: #fff;
+$primary_color_bg: #fff;
+$secundary_color_bg: #000;
+$hover_color: #f110d3;
+
+
+// FUENTES
+$font-family-body: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+$font-family-tittle: 'Dancing Script', cursive;
+
+
+// UPPERCASE
+%base-font {
+    font-family: $font-family-body;
+    color: $primary_color_text;
+    background-color: $primary_color_bg;
+}
+
+%text-navbar {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: $primary_color_text;
+}
+
+ul, li {
+    padding: 0;
+    list-style: none;
+}
+
+i {
+    width: 30px;
+    height: 27px;
+    font-size: 25px;
+    text-align: center;
+}
