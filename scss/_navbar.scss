@@ -132,6 +132,10 @@
                 img {
                     height: 40px;
                     border-radius: 50%;
+                    transition: transform 1.5s;
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
                 }
 
                 .nav_items {

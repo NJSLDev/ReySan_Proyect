@@ -27,6 +27,29 @@ i {
   text-align: center;
 }
 
+.signup_form input {
+  height: 55px;
+  max-width: 220px;
+  padding: 5px;
+  text-align: center;
+}
+.signup_form button {
+  background-color: black;
+  color: white;
+  height: 55px;
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: -10px;
+  border: none;
+  line-height: normal;
+}
+.signup_form button:hover {
+  background-color: #f110d3;
+  color: #000;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -141,6 +164,10 @@ i {
 .header .header_bar_responsive > div .navbar img {
   height: 40px;
   border-radius: 50%;
+  transition: transform 1.5s;
+}
+.header .header_bar_responsive > div .navbar img:hover {
+  transform: rotate(360deg);
 }
 .header .header_bar_responsive > div .navbar .nav_items {
   padding: 0 10px;
@@ -159,7 +186,7 @@ i {
   background-color: #f110d3;
 }
 .carousel2_content > div .carousel-inner .carousel-item img {
-  height: 400px;
+  height: 500px;
 }
 .carousel2_content > div .carousel-inner .carousel-item > div h5 {
   font-family: "Dancing Script", cursive;
@@ -178,6 +205,194 @@ i {
   color: #000;
 }
 
+.manicure {
+  display: grid;
+  grid-auto-rows: 40rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+  row-gap: 30px;
+}
+.manicure .manicure_col1 {
+  padding: 0;
+}
+.manicure .manicure_col1 > div img {
+  width: 100%;
+  height: 40rem;
+}
+.manicure .manicure_col2 {
+  display: grid;
+  grid-auto-rows: 18rem;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.manicure .manicure_col2 .grid_item figure img {
+  height: 10rem;
+  width: 100%;
+}
+.manicure .manicure_col2 .grid_item div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.manicure .manicure_col2 .grid_item div h2 {
+  font-size: 1.2rem;
+}
+.manicure .manicure_col2 .grid_item div p {
+  font-size: 0.8rem;
+}
+.manicure .manicure_col2 .grid_item div span {
+  font-size: 0.8rem;
+}
+
+.pedicure {
+  display: grid;
+  grid-auto-rows: 40rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+  row-gap: 30px;
+}
+.pedicure .pedicure_col1 {
+  padding: 0;
+}
+.pedicure .pedicure_col1 > div img {
+  width: 100%;
+  height: 40rem;
+}
+.pedicure .pedicure_col2 {
+  display: grid;
+  grid-auto-rows: 18rem;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+.pedicure .pedicure_col2 .grid_item figure img {
+  height: 10rem;
+  width: 100%;
+}
+.pedicure .pedicure_col2 .grid_item div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.pedicure .pedicure_col2 .grid_item div h2 {
+  font-size: 1.2rem;
+}
+.pedicure .pedicure_col2 .grid_item div p {
+  font-size: 0.8rem;
+}
+.pedicure .pedicure_col2 .grid_item div span {
+  font-size: 0.8rem;
+}
+
+.newsletter {
+  display: flex;
+  gap: 2rem;
+  border-top: 1px solid #000;
+  padding: 40px;
+  align-items: center;
+}
+.newsletter .news1 {
+  flex: 50%;
+  padding: 20px;
+}
+.newsletter .news1 .faq h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #f110d3;
+}
+.newsletter .news1 .faq p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.newsletter .news1 .faq p a {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.newsletter .news1 .faq p a:hover {
+  color: #f110d3;
+}
+.newsletter .news1 .contacto {
+  display: flex;
+  gap: 1rem;
+}
+.newsletter .news1 .contacto > div {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+.newsletter .news1 .contacto > div .contact_title {
+  color: #f110d3;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.newsletter .news1 .contacto > div a {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.newsletter .news1 .contacto > div a:hover {
+  color: #f110d3;
+}
+.newsletter .news2 {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.newsletter .news2 .image_content {
+  background-color: #f110d3;
+  border-radius: 50%;
+}
+.newsletter .news2 .image_content img {
+  width: 100%;
+  height: 100px;
+  transition: transform 1.5s;
+  border-radius: 50%;
+}
+.newsletter .news2 .image_content img:hover {
+  transform: rotate(360deg);
+}
+.newsletter .news2 p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 1;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 0;
+  align-items: center;
+  border-top: 1px solid #000;
+}
+.footer .copy {
+  flex: 50%;
+  text-align: center;
+}
+.footer .copy p a:hover {
+  color: #f110d3;
+}
+.footer .social {
+  flex: 50%;
+}
+.footer .social > ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -191,7 +406,7 @@ i {
   background-color: #f110d3;
 }
 .main .carousel_content > div .carousel-inner .carousel-item img {
-  height: 400px;
+  height: 500px;
 }
 .main .carousel_content > div .carousel-inner .carousel-item > div h5 {
   font-family: "Dancing Script", cursive;

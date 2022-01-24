@@ -1,6 +1,9 @@
 @use 'global' as *;
 @use 'navbar' as *;
 @use 'carousel' as *;
+@use 'uñas' as *;
+@use 'news' as *;
+@use 'footer' as *;
 
 
 * {
@@ -23,7 +26,7 @@ body {
 
                 .carousel-item {
                     img {
-                        height: 400px;
+                        height: 500px;
                     }
                      & > div {
 
