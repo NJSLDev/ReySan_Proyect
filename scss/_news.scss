@@ -1,19 +1,20 @@
 @use 'global' as *;
 
 .newsletter {
-    display: flex;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     border-top: 1px solid $primary_color_text;
     padding: 40px;
     align-items: center;
 
     .news1 {
-        flex: 50%;
         padding: 20px;
         .faq {
             h4 {
                 font-family: $font-family-tittle;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 font-weight: 900;
                 color: $hover_color;
             }
@@ -25,7 +26,7 @@
 
                 a{
                     font-family: $font-family-tittle;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     font-weight: 900;
                     &:hover {
                         color: $hover_color;
@@ -35,7 +36,9 @@
         }
 
         .contacto {
-            display: flex;
+            display: grid;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
 
             & > div {
@@ -46,7 +49,7 @@
                 .contact_title {
                     color: $hover_color;
                     font-family: $font-family-tittle;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     font-weight: 900;
                 }
 
@@ -54,7 +57,7 @@
                     font-family: $font-family-body;
                     font-size: 1rem;
                     font-weight: 400;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     &:hover {
                         color: $hover_color;
                     }
@@ -64,7 +67,6 @@
     }
 
     .news2 {
-        flex: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,7 +89,7 @@
 
         p {
             font-family: $font-family-tittle;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500;
             padding: 10px;
             line-height: 1;

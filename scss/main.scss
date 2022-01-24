@@ -56,7 +56,10 @@ body {
     }
 
     .card_content {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
         gap: 2rem;
+        margin: 3rem;
         .card_item {
             .card {
                 border: 1px solid $primary_color_text;
@@ -100,6 +103,239 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        .header_bar_fix {
+            display: none;
+        }
+        .header_bar_responsive {
+            & > div {
+                .btn_menu {
+                    width: 100%;
+                    .button_content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        margin-top: 70px;
+        .carousel_content {
+            & > div {
+                .carousel-inner {
+                   .carousel-item img {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+
+        .card_content {
+            margin: 1rem 1rem;
+            gap: 1rem;
+        }
+    }
+
+    .carousel2_content {
+        & > div {
+            .carousel-inner {
+               .carousel-item img {
+                    height: 350px;
+                }
+            }
+        }
+    }
+
+    .manicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+
+        .manicure_col1 {
+            display: none;
+        }
+
+        .manicure_col2 {
+            padding: 0;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            .grid_item {
+                text-align: center;
+                figure {
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pedicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+
+        .pedicure_col1 {
+            display: none;
+        }
+
+        .pedicure_col2 {
+            padding: 0;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            .grid_item {
+                text-align: center;
+                figure {
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .header {
+        .header_bar_fix {
+            display: none;
+        }
+
+        .header_bar_responsive {
+            & > div {
+                .btn_menu {
+                    width: 100%;
+                    .button_content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        margin-top: 70px;
+
+        .card_content {
+            margin: 1rem 5rem;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+
+            .card_item {
+                padding: 0 30px;
+            }
+        }
+    }
+
+    .manicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+
+        .manicure_col1 {
+            display: none;
+        }
+
+        .manicure_col2 {
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            padding: 0;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            .grid_item {
+                text-align: center;
+                figure {
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pedicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+
+        .pedicure_col1 {
+            display: none;
+        }
+
+        .pedicure_col2 {
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            padding: 0;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            .grid_item {
+                text-align: center;
+                figure {
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1090px)  {
+    .header {
+        .header_bar_fix {
+            display: none;
+        }
+
+        .header_bar_responsive {
+            & > div {
+                .btn_menu {
+                    width: 100%;
+                    .button_content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        margin-top: 70px;
+
+        .card_content {
+            margin: 1rem .5rem;
+            grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+            gap: .5rem;
+
+            .card_item {
+                padding: 0;
             }
         }
     }
