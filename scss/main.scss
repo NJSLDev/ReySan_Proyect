@@ -135,7 +135,7 @@ body {
             & > div {
                 .carousel-inner {
                    .carousel-item img {
-                        height: 350px;
+                        height: 250px;
                     }
                 }
             }
@@ -144,6 +144,28 @@ body {
         .card_content {
             margin: 1rem 1rem;
             gap: 1rem;
+            grid-auto-rows: auto;
+
+            .card_item {
+                padding: 0 20px;
+                .card {
+                    img {
+                        flex: 1 1;
+                    }
+
+                    .card-body {
+                        flex: 3 1;
+                         h5 {
+                             font-size: 1rem;
+                             font-weight: 600;
+                         }
+
+                         p {
+                             font-size: 1rem;
+                         }
+                    }
+                }
+            }
         }
     }
 
@@ -151,62 +173,73 @@ body {
         & > div {
             .carousel-inner {
                .carousel-item img {
-                    height: 350px;
+                    height: 250px;
                 }
             }
         }
     }
 
     .manicure {
-        justify-items: center;
-        align-items: center;
-        row-gap: 0;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        margin-bottom: 30px;
 
         .manicure_col1 {
-            display: none;
+            order: 1;
+
+            .manicure_img {
+                img {
+                    height: 15rem;
+                    width: max(240px, 100%);
+                }
+            }
         }
 
         .manicure_col2 {
+            order: 2;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(2, minmax(139px, 1fr));
             padding: 0;
-            gap: 1rem;
-            justify-items: center;
-            align-items: center;
+            gap: .5rem;
+            justify-items: stretch;
+            align-items: stretch;
 
             .grid_item {
                 text-align: center;
-                figure {
-
-                    img {
-                        width: 250px;
-                    }
-                }
             }
         }
     }
 
     .pedicure {
-        justify-items: center;
-        align-items: center;
-        row-gap: 0;
+        justify-items: stretch;
+        align-items: stretch;
+        row-gap: 5px;
+        grid-template-columns: 1fr;
 
         .pedicure_col1 {
-            display: none;
+            order: 1;
+
+            .manicure_img {
+                img {
+                    height: 15rem;
+                    width: max(240px,100%);
+                }
+            }
         }
 
         .pedicure_col2 {
+            order: 2;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(2, minmax(139px, 1fr));
             padding: 0;
-            gap: 1rem;
-            justify-items: center;
-            align-items: center;
+            gap: .5rem;
+            justify-items: stretch;
+            align-items: stretch;
 
             .grid_item {
                 text-align: center;
-                figure {
-
-                    img {
-                        width: 250px;
-                    }
-                }
             }
         }
     }
@@ -249,27 +282,38 @@ body {
     }
 
     .manicure {
-        justify-items: center;
-        align-items: center;
-        row-gap: 0;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        margin-bottom: 30px;
 
         .manicure_col1 {
-            display: none;
+            order: 1;
+
+            .manicure_img {
+                img {
+                    height: 15rem;
+                    width: max(402px,100%);
+                }
+            }
         }
 
         .manicure_col2 {
-            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            order: 2;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(2, minmax(193px, 1fr));
             padding: 0;
-            gap: 1rem;
-            justify-items: center;
-            align-items: center;
+            gap: .5rem;
+            justify-items: stretch;
+            align-items: stretch;
 
             .grid_item {
                 text-align: center;
                 figure {
 
                     img {
-                        width: 250px;
+                        width: 190px;
                     }
                 }
             }
@@ -277,27 +321,37 @@ body {
     }
 
     .pedicure {
-        justify-items: center;
-        align-items: center;
-        row-gap: 0;
+        justify-items: stretch;
+        align-items: stretch;
+        row-gap: 5px;
+        grid-template-columns: 1fr;
 
         .pedicure_col1 {
-            display: none;
+            order: 1;
+
+            .manicure_img {
+                img {
+                    height: 15rem;
+                    width: max(402px,100%);
+                }
+            }
         }
 
         .pedicure_col2 {
-            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            order: 2;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(2, minmax(193px, 1fr));
             padding: 0;
-            gap: 1rem;
-            justify-items: center;
-            align-items: center;
+            gap: .5rem;
+            justify-items: stretch;
+            align-items: stretch;
 
             .grid_item {
                 text-align: center;
                 figure {
 
                     img {
-                        width: 250px;
+                        width: 190px;
                     }
                 }
             }
@@ -336,6 +390,162 @@ body {
 
             .card_item {
                 padding: 0;
+            }
+        }
+    }
+
+    .manicure {
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 0;
+
+        .manicure_col1 {
+            order: 1;
+
+            .manicure_img {
+                img {
+                    height: 26rem;
+                }
+            }
+        }
+
+        .manicure_col2 {
+            order: 2;
+            grid-template-columns: repeat(2, minmax(338px, 1fr));
+            padding: 0;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            .grid_item {
+                text-align: center;
+                figure {
+
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pedicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+        grid-template-columns: 1fr;
+
+        .pedicure_col1 {
+            order: 1;
+
+            .manicure_img {
+                img {
+                    height: 26rem;
+                    width: 694px;
+                }
+            }
+        }
+
+        .pedicure_col2 {
+            order: 2;
+            grid-template-columns: repeat(2, minmax(338px, 1fr));
+            padding: 0;
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+
+            .grid_item {
+                text-align: center;
+                figure {
+
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1091px) {
+    .header {
+        .header_bar_responsive {
+            & > div {
+                .btn_menu {
+                    width: 10%;
+                    .button_content {
+                        width: 100%;
+                    }
+                }
+
+                .btn_menu.menu {
+                    display: none;
+                }
+
+                .btn_menu.login {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .main {
+        margin-top: 70px;
+
+        .card_content {
+            margin: 2rem 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+            gap: 3rem;
+
+            .card_item {
+                padding: 20px;
+            }
+        }
+    }
+
+    .manicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+
+        .manicure_col1 {
+            order: 1;
+        }
+
+        .manicure_col2 {
+            order: 2;
+            grid-auto-rows: 19rem;
+            grid-template-columns: repeat(2, minmax(218px, 1fr));
+            gap: 1rem;
+            justify-items: stretch;
+            align-items: stretch;
+
+            .grid_item {
+                text-align: center;
+            }
+        }
+    }
+
+    .pedicure {
+        justify-items: center;
+        align-items: center;
+        row-gap: 0;
+
+        .pedicure_col1 {
+            order: 2;
+        }
+
+        .pedicure_col2 {
+            order: 1;
+            grid-auto-rows: 19rem;
+            grid-template-columns: repeat(2, minmax(218px, 1fr));
+            gap: 1rem;
+            justify-items: stretch;
+            align-items: stretch;
+
+            .grid_item {
+                text-align: center;
             }
         }
     }

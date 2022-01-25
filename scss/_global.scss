@@ -3,6 +3,7 @@ $secundary_color_text: #fff;
 $primary_color_bg: #fff;
 $secundary_color_bg: #000;
 $hover_color: #f110d3;
+$input_color_bg: #f6d1f1;
 
 
 // FUENTES
@@ -59,6 +60,7 @@ i {
         margin-left: -10px;
         border: none;
         line-height: normal;
+        transition: background-color 1.5s;
 
         &:hover {
             background-color: $hover_color;

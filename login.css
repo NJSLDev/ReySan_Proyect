@@ -1,0 +1,116 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  width: 30px;
+  height: 27px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.signup_form {
+  display: inline-flex;
+}
+.signup_form input {
+  height: 55px;
+  max-width: 220px;
+  padding: 5px;
+  text-align: center;
+}
+.signup_form button {
+  background-color: black;
+  color: white;
+  height: 55px;
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: -10px;
+  border: none;
+  line-height: normal;
+  transition: background-color 1.5s;
+}
+.signup_form button:hover {
+  background-color: #f110d3;
+  color: #000;
+}
+
+.main {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.main .login_content {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+.main .login_content .form_header h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.main .login_content .form_header p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.main .login_content .form_body {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  grid-gap: 20px;
+}
+.main .login_content .form_body label {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.main .login_content .form_body input {
+  display: block;
+  width: 100%;
+  font-weight: 300;
+  padding: 8px;
+  background: #f6d1f1;
+  border: none;
+  font-size: 1.3rem;
+  color: #000;
+}
+.main .login_content .form_body button {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 11px 35px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  transition: background-color 1.5s;
+}
+.main .login_content .form_body button:hover {
+  background-color: #f110d3;
+  color: #000;
+}
+.main .login_content .form_footer p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.main .login_content .form_footer a:hover {
+  color: #f110d3;
+}
+
+/*# sourceMappingURL=login.css.map */
