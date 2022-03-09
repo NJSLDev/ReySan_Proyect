@@ -78,11 +78,11 @@
                 font-weight: 400;
             }
 
-             a {
-                 &:hover {
-                     color: $hover_color;
-                 }
-             }
+            a {
+                &:hover {
+                    color: $hover_color;
+                }
+            }
         }
     }
 

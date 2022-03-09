@@ -1,0 +1,844 @@
+body, .main .card_content .card_item .card .card-body h5, .main .card_content .card_item .card .card-body p {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.header {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  width: 30px;
+  height: 27px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.signup_form {
+  display: inline-flex;
+}
+.signup_form input {
+  height: 55px;
+  max-width: 220px;
+  padding: 5px;
+  text-align: center;
+}
+.signup_form button {
+  background-color: black;
+  color: white;
+  height: 55px;
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: -10px;
+  border: none;
+  line-height: normal;
+  transition: background-color 1.5s;
+}
+.signup_form button:hover {
+  background-color: #f110d3;
+  color: #000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+}
+.header .header_bar_fix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 30px;
+  width: 100%;
+}
+.header .header_bar_fix a {
+  color: #fff;
+}
+.header .header_bar_fix a:hover {
+  color: #f110d3;
+  transition: color 1.5s;
+}
+.header .header_bar_fix .fix_promotions {
+  display: flex;
+  flex: 3 1 auto;
+  align-items: center;
+  justify-content: start;
+}
+.header .header_bar_fix .fix_promotions a {
+  height: 28px;
+}
+.header .header_bar_fix .fix_login {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 0 0 auto;
+}
+.header .header_bar_fix ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.header .header_bar_fix ul li {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.header .header_bar_fix ul li div,
+.header .header_bar_fix ul li div::after,
+.header .header_bar_fix ul li div::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+}
+.header .header_bar_fix ul li div::after,
+.header .header_bar_fix ul li div::before {
+  height: 1px;
+}
+.header .header_bar_fix ul li div:hover::after {
+  background-color: #f110d3;
+}
+.header .header_bar_responsive {
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.header .header_bar_responsive > div {
+  display: flex;
+  height: 100%;
+}
+.header .header_bar_responsive > div .btn_menu {
+  height: 100%;
+  width: auto;
+  border-right: 1px solid #000;
+}
+.header .header_bar_responsive > div .btn_menu .button_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-items: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  padding: 10px 5px;
+  transition: background-color 1.5s;
+}
+.header .header_bar_responsive > div .btn_menu .button_content:hover {
+  background-color: #f110d3;
+}
+.header .header_bar_responsive > div .btn_menu .button_content:hover > a {
+  color: #000;
+}
+.header .header_bar_responsive > div .btn_menu .button_content .icon {
+  height: 49px;
+  flex: 1 1 70%;
+}
+.header .header_bar_responsive > div .btn_menu .button_content .text {
+  height: 19px;
+  flex: 0 0 auto;
+  align-self: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+.header .header_bar_responsive > div .navbar {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  border-right: 1px solid #000;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+.header .header_bar_responsive > div .navbar img {
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 1.5s;
+}
+.header .header_bar_responsive > div .navbar img:hover {
+  transform: rotate(360deg);
+}
+.header .header_bar_responsive > div .navbar .nav_items {
+  padding: 0 10px;
+  transition: background-color 1.5s;
+}
+.header .header_bar_responsive > div .navbar .nav_items:hover {
+  background-color: #f110d3;
+  border-radius: 50%;
+}
+.header .header_bar_responsive > div .navbar .nav_items .nav_link {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel2_content > div .carousel-indicators [data-bs-target] {
+  background-color: #f110d3;
+}
+.carousel2_content > div .carousel-inner .carousel-item img {
+  height: 500px;
+}
+.carousel2_content > div .carousel-inner .carousel-item > div h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.carousel2_content > div .carousel-inner .carousel-item > div h5:hover {
+  color: #f110d3;
+}
+.carousel2_content > div .carousel-inner .carousel-item > div p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.manicure {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 30px;
+}
+.manicure .manicure_col1 {
+  padding: 0;
+}
+.manicure .manicure_col1 > div img {
+  width: 100%;
+  height: 40rem;
+}
+.manicure .manicure_col2 {
+  display: grid;
+  grid-auto-rows: 18rem;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.manicure .manicure_col2 .grid_item figure img {
+  height: 10rem;
+  width: 100%;
+}
+.manicure .manicure_col2 .grid_item div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.manicure .manicure_col2 .grid_item div h2 {
+  font-size: 1.2rem;
+}
+.manicure .manicure_col2 .grid_item div p {
+  font-size: 0.8rem;
+}
+.manicure .manicure_col2 .grid_item div span {
+  font-size: 0.8rem;
+}
+
+.pedicure {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 30px;
+}
+.pedicure .pedicure_col1 {
+  padding: 0;
+}
+.pedicure .pedicure_col1 > div img {
+  width: 100%;
+  height: 40rem;
+}
+.pedicure .pedicure_col2 {
+  display: grid;
+  grid-auto-rows: 18rem;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+.pedicure .pedicure_col2 .grid_item figure img {
+  height: 10rem;
+  width: 100%;
+}
+.pedicure .pedicure_col2 .grid_item div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.pedicure .pedicure_col2 .grid_item div h2 {
+  font-size: 1.2rem;
+}
+.pedicure .pedicure_col2 .grid_item div p {
+  font-size: 0.8rem;
+}
+.pedicure .pedicure_col2 .grid_item div span {
+  font-size: 0.8rem;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  border-top: 1px solid #000;
+  padding: 40px;
+  align-items: center;
+}
+.newsletter .news1 {
+  padding: 20px;
+}
+.newsletter .news1 .faq h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #f110d3;
+}
+.newsletter .news1 .faq p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.newsletter .news1 .faq p a {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.newsletter .news1 .faq p a:hover {
+  color: #f110d3;
+}
+.newsletter .news1 .contacto {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.newsletter .news1 .contacto > div {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+.newsletter .news1 .contacto > div .contact_title {
+  color: #f110d3;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.newsletter .news1 .contacto > div a {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.newsletter .news1 .contacto > div a:hover {
+  color: #f110d3;
+}
+.newsletter .news2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.newsletter .news2 .image_content {
+  background-color: #f110d3;
+  border-radius: 50%;
+}
+.newsletter .news2 .image_content img {
+  width: 100%;
+  height: 100px;
+  transition: transform 1.5s;
+  border-radius: 50%;
+}
+.newsletter .news2 .image_content img:hover {
+  transform: rotate(360deg);
+}
+.newsletter .news2 p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 1;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 0;
+  align-items: center;
+  border-top: 1px solid #000;
+}
+.footer .copy {
+  flex: 50%;
+  text-align: center;
+}
+.footer .copy p a:hover {
+  color: #f110d3;
+}
+.footer .social {
+  flex: 50%;
+}
+.footer .social > ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+body #modal_menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+body .div_menu_content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+body .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+body .close:hover,
+body .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 100px;
+}
+.main .carousel_content > div .carousel-indicators [data-bs-target] {
+  background-color: #f110d3;
+}
+.main .carousel_content > div .carousel-inner .carousel-item img {
+  height: 500px;
+}
+.main .carousel_content > div .carousel-inner .carousel-item > div h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.main .carousel_content > div .carousel-inner .carousel-item > div h5:hover {
+  color: #f110d3;
+}
+.main .carousel_content > div .carousel-inner .carousel-item > div p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.main .card_content {
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem;
+}
+.main .card_content .card_item .card {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+.main .card_content .card_item .card img {
+  height: 250px;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.main .card_content .card_item .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .card_content .card_item .card .card-body h5 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.main .card_content .card_item .card .card-body p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.main .card_content .card_item .card .card-body .btn_card {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  transition: background-color 1.5s;
+}
+.main .card_content .card_item .card .card-body .btn_card:hover {
+  color: #000;
+  background-color: #f110d3;
+}
+
+@media (max-width: 425px) {
+  .header .header_bar_fix {
+    display: none;
+  }
+  .header .header_bar_responsive > div .btn_menu {
+    width: 100%;
+  }
+  .header .header_bar_responsive > div .btn_menu .button_content {
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .main {
+    margin-top: 70px;
+  }
+  .main .carousel_content > div .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+  .main .card_content {
+    margin: 1rem 1rem;
+    gap: 1rem;
+    grid-auto-rows: auto;
+  }
+  .main .card_content .card_item {
+    padding: 0 20px;
+  }
+  .main .card_content .card_item .card img {
+    flex: 1 1;
+  }
+  .main .card_content .card_item .card .card-body {
+    flex: 3 1;
+  }
+  .main .card_content .card_item .card .card-body h5 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .main .card_content .card_item .card .card-body p {
+    font-size: 1rem;
+  }
+
+  .carousel2_content > div .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+
+  .manicure {
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    margin-bottom: 30px;
+  }
+  .manicure .manicure_col1 {
+    order: 1;
+  }
+  .manicure .manicure_col1 .manicure_img img {
+    height: 15rem;
+    width: max(240px, 100%);
+  }
+  .manicure .manicure_col2 {
+    order: 2;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, minmax(139px, 1fr));
+    padding: 0;
+    gap: 0.5rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .manicure .manicure_col2 .grid_item {
+    text-align: center;
+  }
+
+  .pedicure {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 5px;
+    grid-template-columns: 1fr;
+  }
+  .pedicure .pedicure_col1 {
+    order: 1;
+  }
+  .pedicure .pedicure_col1 .manicure_img img {
+    height: 15rem;
+    width: max(240px, 100%);
+  }
+  .pedicure .pedicure_col2 {
+    order: 2;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, minmax(139px, 1fr));
+    padding: 0;
+    gap: 0.5rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .pedicure .pedicure_col2 .grid_item {
+    text-align: center;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .header .header_bar_fix {
+    display: none;
+  }
+  .header .header_bar_responsive > div .btn_menu {
+    width: 100%;
+  }
+  .header .header_bar_responsive > div .btn_menu .button_content {
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .main {
+    margin-top: 70px;
+  }
+  .main .card_content {
+    margin: 1rem 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+  .main .card_content .card_item {
+    padding: 0 30px;
+  }
+
+  .manicure {
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    margin-bottom: 30px;
+  }
+  .manicure .manicure_col1 {
+    order: 1;
+  }
+  .manicure .manicure_col1 .manicure_img img {
+    height: 15rem;
+    width: max(402px, 100%);
+  }
+  .manicure .manicure_col2 {
+    order: 2;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, minmax(193px, 1fr));
+    padding: 0;
+    gap: 0.5rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .manicure .manicure_col2 .grid_item {
+    text-align: center;
+  }
+  .manicure .manicure_col2 .grid_item figure img {
+    width: 190px;
+  }
+
+  .pedicure {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 5px;
+    grid-template-columns: 1fr;
+  }
+  .pedicure .pedicure_col1 {
+    order: 1;
+  }
+  .pedicure .pedicure_col1 .manicure_img img {
+    height: 15rem;
+    width: max(402px, 100%);
+  }
+  .pedicure .pedicure_col2 {
+    order: 2;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, minmax(193px, 1fr));
+    padding: 0;
+    gap: 0.5rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .pedicure .pedicure_col2 .grid_item {
+    text-align: center;
+  }
+  .pedicure .pedicure_col2 .grid_item figure img {
+    width: 190px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1090px) {
+  .header .header_bar_fix {
+    display: none;
+  }
+  .header .header_bar_responsive > div .btn_menu {
+    width: 100%;
+  }
+  .header .header_bar_responsive > div .btn_menu .button_content {
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .main {
+    margin-top: 70px;
+  }
+  .main .card_content {
+    margin: 1rem 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 0.5rem;
+  }
+  .main .card_content .card_item {
+    padding: 0;
+  }
+
+  .manicure {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+  .manicure .manicure_col1 {
+    order: 1;
+  }
+  .manicure .manicure_col1 .manicure_img img {
+    height: 26rem;
+  }
+  .manicure .manicure_col2 {
+    order: 2;
+    grid-template-columns: repeat(2, minmax(338px, 1fr));
+    padding: 0;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .manicure .manicure_col2 .grid_item {
+    text-align: center;
+  }
+  .manicure .manicure_col2 .grid_item figure img {
+    width: 300px;
+  }
+
+  .pedicure {
+    justify-items: center;
+    align-items: center;
+    row-gap: 0;
+    grid-template-columns: 1fr;
+  }
+  .pedicure .pedicure_col1 {
+    order: 1;
+  }
+  .pedicure .pedicure_col1 .manicure_img img {
+    height: 26rem;
+    width: 694px;
+  }
+  .pedicure .pedicure_col2 {
+    order: 2;
+    grid-template-columns: repeat(2, minmax(338px, 1fr));
+    padding: 0;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .pedicure .pedicure_col2 .grid_item {
+    text-align: center;
+  }
+  .pedicure .pedicure_col2 .grid_item figure img {
+    width: 300px;
+  }
+}
+@media (min-width: 1091px) {
+  .header .header_bar_responsive > div .btn_menu {
+    width: 10%;
+  }
+  .header .header_bar_responsive > div .btn_menu .button_content {
+    width: 100%;
+  }
+  .header .header_bar_responsive > div .btn_menu.menu {
+    display: none;
+  }
+  .header .header_bar_responsive > div .btn_menu.login {
+    display: none;
+  }
+
+  .main {
+    margin-top: 70px;
+  }
+  .main .card_content {
+    margin: 2rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 3rem;
+  }
+  .main .card_content .card_item {
+    padding: 20px;
+  }
+
+  .manicure {
+    justify-items: center;
+    align-items: center;
+    row-gap: 0;
+  }
+  .manicure .manicure_col1 {
+    order: 1;
+  }
+  .manicure .manicure_col2 {
+    order: 2;
+    grid-auto-rows: 19rem;
+    grid-template-columns: repeat(2, minmax(218px, 1fr));
+    gap: 1rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .manicure .manicure_col2 .grid_item {
+    text-align: center;
+  }
+
+  .pedicure {
+    justify-items: center;
+    align-items: center;
+    row-gap: 0;
+  }
+  .pedicure .pedicure_col1 {
+    order: 2;
+  }
+  .pedicure .pedicure_col2 {
+    order: 1;
+    grid-auto-rows: 19rem;
+    grid-template-columns: repeat(2, minmax(218px, 1fr));
+    gap: 1rem;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .pedicure .pedicure_col2 .grid_item {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

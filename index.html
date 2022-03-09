@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, userscalable=No">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReySan - Proyect web Developer</title>
     <!-- LINK GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="modal_menu">
+    <span class="close">&times;</span>
+    <img class="div_menu_content" id="modal_image" />
+    </div>
     <!-- INICIO - HEADER - BARRA DE NAVEGACION -->
     <header class="header">
         <div class="header_bar_fix">
@@ -23,14 +27,14 @@
                     <li>
                         <div>
                             <a href="">
-                                <span> 🌼 Modelos en Tendencia</span>
+                                <span> 🌼 Trending Models</span>
                             </a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <a href="">
-                                <span>🧘 Estilistas en Tendencia</span>
+                                <span>🧘 Stylists in Trend</span>
                             </a>
                         </div>
                     </li>
@@ -42,7 +46,7 @@
                         <div>
                             <a href="login.html">
                                 <i class="fas fa-sign-in-alt"></i>
-                                <span>Entrar</span>
+                                <span>Login</span>
                             </a>
                         </div>
                     </li>
@@ -50,7 +54,7 @@
                         <div>
                             <a href="">
                                 <i class="fas fa-registered"></i>
-                                <span>Registrar</span>
+                                <span>Register</span>
                             </a>
                         </div>
                     </li>
@@ -59,7 +63,7 @@
         </div>
         <div class="header_bar_responsive">
             <div class="bar_responsive_content">
-                <div class="btn_menu menu">
+                <div class="btn_menu menu" id="btnMenu">
                     <div class="button_content">
                         <span class="icon">
                             <i class="fas fa-bars"></i>
@@ -77,13 +81,13 @@
                 </div>
                 <ul class="navbar">
                     <li class="nav_items">
-                        <a class="nav_link" aria-current="page" href="#promo">Promociones</a>
+                        <a class="nav_link" aria-current="page" href="#promo">Promotions</a>
                     </li>
                     <li class="nav_items">
-                        <a class="nav_link" aria-current="page" href="#servicios">Servicios</a>
+                        <a class="nav_link" aria-current="page" href="#services">Services</a>
                     </li>
                     <li class="nav_items">
-                        <a class="nav_link" aria-current="page" href="#direccion">Direccion</a>
+                        <a class="nav_link" aria-current="page" href="#direction">Direction</a>
                     </li>
                     <li class="nav_items">
                         <a class="logo" href="index.html">
@@ -91,13 +95,13 @@
                         </a>
                     </li>
                     <li class="nav_items">
-                        <a class="nav_link" aria-current="page" href="#historia">Historia</a>
+                        <a class="nav_link" aria-current="page" href="#history">History</a>
                     </li>
                     <li class="nav_items">
-                        <a class="nav_link" aria-current="page" href="#patrocinantes">Patrocinantes</a>
+                        <a class="nav_link" aria-current="page" href="#sponsors">Sponsors</a>
                     </li>
                     <li class="nav_items">
-                        <a class="nav_link" aria-current="page" href="#contacto">Contacto</a>
+                        <a class="nav_link" aria-current="page" href="#newsletter">Contact</a>
                     </li>
                 </ul>
                 <div class="btn_menu login">
@@ -136,22 +140,22 @@
                   <div class="carousel-item active" data-bs-interval="10000">
                     <img src="./assets/image/carousel_3.jpg" class="d-block w-100" alt="carousel_1">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Desde diseños simples hasta los mas actuales</h5>
-                      <p>Diseños para todas las ocaciones, edades y gustos.</p>
+                      <h5>From simple designs to the most current</h5>
+                      <p>Designs for all occasions, ages and tastes.</p>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="./assets/image/carousel_2.jpg" class="d-block w-100" alt="carousel_2">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Los colores mas exoticos</h5>
-                      <p>Revisa nuestro catalogo y observa la gran variedad de colores disponibles.</p>
+                      <h5>The most exotic colors</h5>
+                      <p>Check our catalog and see the wide variety of colors available.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./assets/image/carousel_4.jpg" class="d-block w-100" alt="carousel_3">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Gran variedad en Acrilicos</h5>
-                      <p>Todos los tamaños y para cualquier tipo de manos.</p>
+                      <h5>Wide variety of acrylics</h5>
+                      <p>All sizes and for any type of hands.</p>
                     </div>
                   </div>
                 </div>
@@ -173,9 +177,9 @@
                 <div class="card">
                     <img src="assets/image/hidratacion.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Hidratacion</h5>
+                      <h5 class="card-title">Hydration</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn_card">Entrar</a>
+                      <a href="#" class="btn btn_card">Entry</a>
                     </div>
                   </div>
             </article>
@@ -183,9 +187,9 @@
                 <div class="card">
                     <img src="assets/image/esmalte.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Esmalte</h5>
+                      <h5 class="card-title">Nail polish</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn_card">Entrar</a>
+                      <a href="#" class="btn btn_card">Entry</a>
                     </div>
                   </div>
             </article>
@@ -193,9 +197,9 @@
                 <div class="card">
                     <img src="assets/image/maquillaje.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maquillaje</h5>
+                      <h5 class="card-title">Professional make up</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn_card">Entrar</a>
+                      <a href="#" class="btn btn_card">Entry</a>
                     </div>
                   </div>
             </article>
@@ -217,22 +221,22 @@
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./assets/image/carousel_5.jpg" class="d-block w-100" alt="carousel_1">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Todo para la hidratacion de tu piel</h5>
-                  <p>Cuida tu piel antes y despues de cada maquillaje.</p>
+                  <h5>Everything for the hydration of your skin</h5>
+                  <p>Take care of your skin before and after each makeup.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="./assets/image/carousel_6.jpg" class="d-block w-100" alt="carousel_2">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Todo lo que buscas para base y maquillaje</h5>
-                  <p>Con los productos mas top del mercado mundial.</p>
+                  <h5>Everything you are looking for for foundation and makeup</h5>
+                  <p>With the top products in the world market.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./assets/image/carousel_7.jpg" class="d-block w-100" alt="carousel_3">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Diseños a la moda y personalizados</h5>
-                  <p>No esperes mas consulta nuestras promociones.</p>
+                  <h5>Fashionable and personalized designs</h5>
+                  <p>Do not wait any longer consult our promotions.</p>
                 </div>
               </div>
             </div>
@@ -261,8 +265,9 @@
           <div class="grid_item">
             <figure><img src="assets/image/manicure_1.jpg" alt="1"></figure>
             <div>
-              <h2>Flores y Mariposas</h2>
-              <p>Diseño con fondo blanco primaveral</p>
+              <h2>flowers and
+                butterflies</h2>
+              <p>Spring white background design</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -270,8 +275,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/manicure_2.jpg" alt="1"></figure>
             <div>
-              <h2>Flor y base Verde Aceituna</h2>
-              <p>4 uñas verde y 1 fondo blanco con flor</p>
+              <h2>Flower and base Olive Green</h2>
+              <p>4 green nails and 1 white background with flower</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -279,8 +284,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/manicure_3.jpg" alt="1"></figure>
             <div>
-              <h2>Flor y base Verde Oscuro</h2>
-              <p>4 uñas verde y 1 fondo blanco con flor</p>
+              <h2>Flower and base Dark Green</h2>
+              <p>4 green nails and 1 white background with flower</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -288,8 +293,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/manicure_4.jpg" alt="1"></figure>
             <div>
-              <h2>Azul Oscuro, Lazo y Corazon</h2>
-              <p>3 uñas Azul oscuro y 2 con diseños</p>
+              <h2>Dark Blue, Bow and Heart</h2>
+              <p>3 dark blue nails and 2 with designs</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -304,8 +309,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/pedicure_1.jpg" alt="1"></figure>
             <div>
-              <h2>Azul Corona de la reina</h2>
-              <p>Diseño con fondo Azul y perlas tipo corona.</p>
+              <h2>blue queen crown</h2>
+              <p>Design with a blue background and crown-like pearls.</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -313,8 +318,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/pedicure_2.jpg" alt="2"></figure>
             <div>
-              <h2>Diseño animal Print</h2>
-              <p>Capa color Amarillo con parches variados</p>
+              <h2>animal print design</h2>
+              <p>Yellow cape with assorted patches</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -322,8 +327,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/pedicure_3.jpg" alt="3"></figure>
             <div>
-              <h2>Diseño Candy</h2>
-              <p>Capa color Pastel Favorito con gotitas de colorores</p>
+              <h2>Candy design</h2>
+              <p>Favorite Pastel color layer with colored droplets</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -331,8 +336,8 @@
           <div class="grid_item">
             <figure><img src="assets/image/pedicure_4.jpg" alt="4"></figure>
             <div>
-              <h2>Diseño Base gris y Blanco</h2>
-              <p>3 uñas color negro y 2 uñas color blanco, Perlas variadas.</p>
+              <h2>Gray and White Base Design</h2>
+              <p>3 black nails and 2 white nails, Mixed Pearls.</p>
               <span>X - Pesos</span>
             </div>
           </div>
@@ -348,24 +353,24 @@
     <!-- FINAL - SECTION  GRID -->
 
     <!-- INICIO - SECTION NEWSLETTER -->
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
 
       <article class="news1">
         <div class="faq">
-          <h4>¿Tienes Alguna Pregunta?</h4>
+          <h4>Do you have any question?</h4>
           <p>
-            Revisa nuestra seccion de
-            <a href=""><strong>Preguntas mas Frecuentes.</strong></a>
+            Check out our section
+            <a href=""><strong>Frequently asked questions.</strong></a>
           </p>
         </div>
         <div class="contacto">
           <div>
-            <strong class="contact_title">Contacto # 1</strong>
+            <strong class="contact_title">Contact # 1</strong>
             <a href="" class="telefono">+52 123-456-7890</a>
             <a href="" class="correo">reysan_soporte1@gmail.com</a>
           </div>
           <div>
-            <strong class="contact_title">Contacto # 2</strong>
+            <strong class="contact_title">Contact # 2</strong>
             <a href="" class="telefono">+52 987-654-3210</a>
             <a href="" class="correo">reysan_soporte2@gmail.com</a>
           </div>
@@ -379,7 +384,7 @@
         <p>Subscribe to the newletter to follow our news and discover the wonderful world of fashion!</p>
         <form class="signup_form" action="">
           <input type="email" placeholder="Correo Electronico">
-          <button>Suscribirse</button>
+          <button>To Suscribe</button>
         </form>
       </article>
     </section>
@@ -406,5 +411,11 @@
     <script src="https://kit.fontawesome.com/c30fae2820.js" crossorigin="anonymous"></script>
     <!-- LINK BOOSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FILE JS -->
+    <script src="./javascript/main.js"></script>
+    <!-- CODE JS -->
+    <script type="text/javascript">
+
+    </script>
 </body>
 </html>
